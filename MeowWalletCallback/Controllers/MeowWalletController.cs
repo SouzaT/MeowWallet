@@ -12,7 +12,7 @@ namespace MeowWalletCallback.Controllers
 {
     public class MeowWalletController : ApiController
     {
-        [System.Web.Http.HttpPost]
+        [System.Web.Http.HttpPut]
         public JObject Post(JObject jsonResult)
         {
             MeowWalletCallbackModel obj = JsonConvert.DeserializeObject<MeowWalletCallbackModel>(jsonResult.ToString());
